@@ -14,7 +14,7 @@ WORKDIR /src
 RUN echo "WORKDIR:"
 RUN echo "$WORKDIR"
 
-COPY ["webappdemo/webappdemo.csproj", "webappdemo/"]
+COPY ["./webappdemo/webappdemo.csproj", "webappdemo/"]
 #COPY . ./
 RUN dotnet restore "webappdemo/webappdemo.csproj"
 COPY . .
