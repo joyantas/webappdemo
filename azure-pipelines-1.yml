@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: 'a4acbf44-8a74-41e6-a0e5-697c92333f19'
   imageRepository: 'joyantaswebappdemo'
   containerRegistry: 'hclcontainer2.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/webappdemo/dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
