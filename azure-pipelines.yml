@@ -1,4 +1,11 @@
 # Docker
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    azureSubscription: 'JS - Internal MS Subscription(14660276-61e6-4e2f-b28e-ffa4b63c8696)'
+    azureContainerRegistry: '{"loginServer":"hclcontainer2.azurecr.io", "id" : "/subscriptions/14660276-61e6-4e2f-b28e-ffa4b63c8696/resourceGroups/HCL/providers/Microsoft.ContainerRegistry/registries/hclcontainer2"}'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Push services'
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
