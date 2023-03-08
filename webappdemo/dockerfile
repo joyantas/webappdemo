@@ -14,7 +14,7 @@ WORKDIR /src
 
 COPY ["./webappdemo.csproj", "webappdemo/"]
 
-RUN dotnet restore "webappdemo.csproj"
+RUN dotnet restore "webappdemo/webappdemo.csproj"
 COPY . .
 WORKDIR "/src/webappdemo"
 RUN dotnet build "webappdemo.csproj" -c Release -o /app/build
