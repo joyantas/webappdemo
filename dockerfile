@@ -11,7 +11,7 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-ECHO  ${WORKDRI}
+ECHO  ${WORKDÌR}
 COPY ["./webappdemo/webappdemo.csproj", "webappdemo/"]
 #COPY . ./
 RUN dotnet restore "webappdemo/webappdemo.csproj"
